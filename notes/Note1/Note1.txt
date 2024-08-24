@@ -1,35 +1,28 @@
-var shrinking = false
+----------------	Mechanics of game	----------------
 
-image_angle = direction
-
-if (timer > 0) {
-    timer -= 1;
-    if (timer <= 0) {
-		shrinking = true
-    }
-}
-
-switch(direction){
-	case 0:
-		x += speed * global.deltaMultiplier;
-	break;
+	-	Skill tree
+		-	Need certain amount of skill points to buy skill
+	-	Level system
+		-	Every enemy you kill will get 3 XP, puzzle you solve will depend on difficulty (easy you get 10, med you get 20, hard you get 30), room you clear you get 50 XP
+		-	After 100 xp you'll level up
+		-	Level will give skill point
+	-	Dodging
+		-	press button and roll
+		-	will be cooldown
+		-	cooldown depends on speed
+		-	cooldown is 10 sec and move 40 px
+	-	Will be 5 dungeons
+		-	After beating each dungeon, you lose the character you played as
 	
-	case 180:
-		x -= speed * global.deltaMultiplier;
-	break;
-	
-	case 90:
-		y -= speed * global.deltaMultiplier;
-	break;
-	
-	case 270:
-		y += speed * global.deltaMultiplier;
-	break
-}
+		
+----------------	Puzzles of game		----------------
 
-show_debug_message(string("{0}, {1}, {2}", timer, image_xscale, image_yscale))
+"idk ask blake"
 
-if shrinking = true || image_alpha < 1{
-	image_xscale -= .1
-	image_yscale -= .1
-} if (image_xscale == 0.00 && image_yscale == 0.00) instance_destroy()
+
+
+----------------	Story of game		----------------
+
+
+
+----------------	Art of game			----------------
