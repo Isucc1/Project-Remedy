@@ -1,0 +1,3 @@
+
+//debug heal
+playerCurrentHealth = playerMaxHealth

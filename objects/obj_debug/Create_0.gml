@@ -1,0 +1,2 @@
+currentMessage = 0
+
