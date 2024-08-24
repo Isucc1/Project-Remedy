@@ -1,0 +1,43 @@
+----------  TODO  ----------
+
+Dodging
+	Press Q to go 40 px in the direction of whichever way your facing (prolly gonna end up being like 5px/s kinda speed, ending up being 8 frame dodge, could double if not fast enough tho)
+	Will be invulnerable during dodge
+Menu
+	Will probably wait until I_was_me sends out concept art for the menu, or at least a font
+Abilities
+	Can be seen in the obj_player create file, but abilities will be "boomerang", "SpeedBuff", "Rage", "FiringRateBuff", "Turret", "AttackBuff", "Heal", "iFramesBuff", "FIREBALL", and "Lightning"
+		Boomerang: Is what it sounds; high range, low damage, but can hit multiple enemies and will return to you in a circular motion
+		Speedbuff: Is what it sounds; once below 30% HP, you will gain a 50% speed buff (or other way around too lazy to look at the slideshow rn)
+		Rage: once below 50% HP, you gain a 30% attack boost (that might have been the numbers for speedbuff idk)
+		FiringRateBuff: Not even gonna explain
+		Turret: Become immobile for 10 or so seconds, but firing speed and attack power is increased dramatically
+		Attack buff: not gonna explain
+		Heal: heal anywhere between 10% - 50% HP with 30 - 45 second cooldown (idk how long)
+		iFramesBuff: Not gonna explain
+		FIREBALL: FIREBALL
+		Lightning: Basic attack thats currently implemented, might add an after effects thing, make it significantly longer and wider, like 10x faster, something that makes it more lightning-y
+	Abilities might be linked to skill tree; will ask I_was_me about that later
+Skill tree (speaking of)
+	Skills will be unlockable, likely based on class
+	Skills will likely just be abilities mentioned earlier
+	Might be upgradable, will have to ask
+	Will be unlocked with…
+Levels
+	XP will be gained after clearing a room or set of rooms, completing a puzzle, or defeating enemies
+	Amounts will vary depending on what you've done
+	100 XP to a level
+Puzzles
+	Need to ask Yaboily about the puzzles (he's designing them so I'll need to code them as he gives me the puzzles)
+Cutscenes
+	Same deal with Puzzles, Akurora is writing the story, and I can't entirely do much without knowing what the story will consist of
+	speaking of which he just sent me this in discord: 
+		“You are Counselor in a school system, You notice 5 particular kids that do not seem as active in a social aspect(abused). You pull up their files at the school computer and you do research on these children. One night as you’re sleeping you drift off into a dream. You think it is just another normal dream(in a roguelite fantasy). You defeat the final boss of the dream and go to work the next day. You notice one of the 5 particular kids are doing far better. You hop into another dream and do the same thing. You notice another kid starts doing better, now you are curious. You get transported into another dream ready for a fight, but you’re not in a normal dream. There are other people just like you here, helping to make the dream world a better place. An attendant of DreamCatcher Inc. comes up to talk with you. She explains that you have a high dream affinity. Meaning despite your age, you have the ability to dream every night. With high dream affinity you are also able to be transported into another person's dream. With this skill set you were (forcefully) recruited to work on a case that involves a family of 5 children and two parents. The attendant explains that the children are abused by their parents and one child takes the beating harsher than the others protecting his siblings. Now you have a reason to help these children. From there on you are devoted to purging these phantom parasites(not physical/ metaphorical) from these children. One night when you think the children are all better and you think this case is done. You get transported to another dream, this time, this mind…is utter horror. You get transported to a cross-dream of the parents. You realize they have high dream affinity too. This is how they have been abusing their children. Physically & mentally."
+	First 2 dreams will be tutorials, after you get contacted by the company, you will be sent into actual dungeons
+Music
+	Should be simple to implement, just need to wait for the music to come in from Ivory & ImmuneFlyer
+Weapons and armor
+	Add weapons and armor
+	Players will only have one melee weapon, one ranged weapon, and one set of armor that they can upgrade throughout the dungeon
+	Each class (except for adventurer) will have a signature weapon that will be like 10x more powerful than their other weapon. I.E. Mage will have a ranged wand that might do 80 damage attack at max level, but a melee stick that does like 10 damage at max level
+	Weapons and armor will automatically equip when you buy them in the lobby (Will probably implement it as simply upping your attack stat and drawing a different name in the stats screen)

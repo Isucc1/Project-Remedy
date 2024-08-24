@@ -35,7 +35,7 @@
   },
   "name":"Project REMedy",
   "resources":[
-    {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
+    {"id":{"name":"TODO-list","path":"notes/TODO-list/TODO-list.yy",},},
     {"id":{"name":"obj_attackHitbox","path":"objects/obj_attackHitbox/obj_attackHitbox.yy",},},
     {"id":{"name":"obj_collisionParent","path":"objects/obj_collisionParent/obj_collisionParent.yy",},},
     {"id":{"name":"obj_debug","path":"objects/obj_debug/obj_debug.yy",},},
