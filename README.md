@@ -1,6 +1,6 @@
 # Project Remedy
 
-Project Remedy is a roguelike, class-based RPG in which you play as a counciler who is recruited by a company in order to enter other people's dreams and make the world a better place
+Project Remedy is a roguelike, class-based RPG featuring puzzles, an enriching story, and more!
 
 Developers:
 
