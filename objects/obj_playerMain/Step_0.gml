@@ -12,23 +12,28 @@ if (timer > 0) {
         canFire = true
     }
 }
+if (dodgeTimer > 0) {
+    dodgeTimer -= 1;
+    if (dodgeTimer <= 0) {
+        dodging = false
+    }
+}
 
-//variables for directional keys
-var _upKey = keyboard_check(vk_up);
-var _downKey = keyboard_check(vk_down);
-var _leftKey = keyboard_check(vk_left);
-var _rightKey = keyboard_check(vk_right);
+var _upKey = keyboard_check(global.upKey)
+var _downKey = keyboard_check(global.downKey)
+var _leftKey = keyboard_check(global.leftKey)
+var _rightKey = keyboard_check(global.rightKey)
 
 //doing directions
 if _upKey{	directionFacing = "north"	}
-else if _downKey{	directionFacing = "south"	}
-else if _leftKey{	directionFacing = "east"	}
+else if _downKey {	directionFacing = "south"	}
+else if _leftKey {	directionFacing = "east"	}
 else if _rightKey{	directionFacing = "west"	}
 
 //updating variables
 global.actualDelta = delta_time/1000000;
 global.deltaMultiplier = global.actualDelta/targetDelta;
-var deltaMovementSpeed = playerSpeed * global.deltaMultiplier
+
 
 if !dead{
 sprite_index = array_get(classStats[class], 0);	}
@@ -41,11 +46,22 @@ playerFiringSpeed = array_get(classStats[class], 4);
 playerSpeed = array_get(classStats[class], 5);
 playerRange = array_get(classStats[class], 6);
 
-if canMove = false{	deltaMovementSpeed = 0	} else deltaMovementSpeed = playerSpeed * global.deltaMultiplier;
+if canMove = false{	var deltaMovementSpeed = 0	} else var deltaMovementSpeed = playerSpeed * global.deltaMultiplier;
+
 
 //variables for where I'm going to move to
-var hspd = (_rightKey - _leftKey) * deltaMovementSpeed;
-var vspd = (_downKey - _upKey) *  deltaMovementSpeed;
+hspd = (_rightKey - _leftKey) * deltaMovementSpeed;
+vspd = (_downKey - _upKey) *  deltaMovementSpeed;
+
+
+if dodging{
+	switch(directionFacing){
+		case "south":	vspd =  5	break;
+		case "north":	vspd = -5	break;
+		case "west" :	hspd =  5	break;
+		case "east" :	hspd = -5	break;
+	}
+}
 
 //moving
 if !(place_meeting((x + hspd), (y + vspd), obj_collisionParent)){

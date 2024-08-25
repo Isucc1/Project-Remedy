@@ -1,3 +1,0 @@
-
-//debug heal
-playerCurrentHealth = playerMaxHealth
