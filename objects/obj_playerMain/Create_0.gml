@@ -19,15 +19,16 @@ global.actualDelta = delta_time/1000000;
 global.deltaMultiplier = global.actualDelta/targetDelta
 
 class = 0
+unlockedClasses = 0
 
 
-//Class' stats, formatted as: [sprite, health, defense, attack, firing rate, speed, range, primary ability, secondary ability]
+//Class' stats, formatted as: [sprite, health, defense, attack, firing rate, speed, range, primary ability, secondary ability, head sprite]
 //Low is 1; Med is 1.5; High is 2; Really High(????) is 2.5
-classStats[0] = [spr_adventurerPlaceholder, 150, 0.4, 5, 3, 1.5, 64, "boomerang", "SpeedBuff"]	//adventurer stats
-classStats[1] = [spr_barbarianPlaceholder, 200, 0.2, 40, 5, 1.5, 32, "Rage", "FiringRateBuff"]		//barbarian stats
-classStats[2] = [spr_tankPlaceholder, 150, 0.6, 30, 1, 1, 64, "Turret", "AttackBuff"]				//tank stats
-classStats[3] = [spr_clericPlaceholder, 100, 0.4, 15, 1, 2, 96, "Heal", "iFramesBuff"]			//cleric stats
-classStats[4] = [spr_magePlaceholder, 100, 0.2, 55, 5, 2, 64, "FIREBALL", "Lightning"]				//mage stats
+classStats[0] = [spr_adventurerPlaceholder, 150, 0.4, 5, 3, 1.5, 64, "boomerang", "SpeedBuff", spr_headAdventurer]	//adventurer stats
+classStats[1] = [spr_barbarianPlaceholder, 200, 0.2, 40, 5, 1.5, 32, "Rage", "FiringRateBuff", spr_headBarbarian]	//barbarian stats
+classStats[2] = [spr_tankPlaceholder, 150, 0.6, 30, 1, 1, 64, "Turret", "AttackBuff", spr_headTank]					//tank stats
+classStats[3] = [spr_clericPlaceholder, 100, 0.4, 15, 1, 9, 96, "Heal", "iFramesBuff", spr_headCleric]				//cleric stats
+classStats[4] = [spr_magePlaceholder, 100, 0.2, 55, 5, 2, 64, "FIREBALL", "Lightning", spr_headMage]				//mage stats
 
 //default stats
 

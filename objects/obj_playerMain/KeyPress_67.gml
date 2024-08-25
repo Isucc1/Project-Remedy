@@ -1,2 +1,2 @@
-if (class <= 3){ ++class;	}
+if (class <= unlockedClasses - 1	){ ++class;	}
 else class = 0

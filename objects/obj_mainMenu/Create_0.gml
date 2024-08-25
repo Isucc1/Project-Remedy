@@ -11,3 +11,5 @@ currentMenu[3] = "Credits"
 currentMenu[1] = "what"
 subMenu = 0
 index = 0
+
+instance_create_depth(0, 0, 0, obj_musicHandler)
