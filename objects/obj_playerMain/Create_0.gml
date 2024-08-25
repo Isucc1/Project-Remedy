@@ -1,5 +1,7 @@
 timer = -1
 dodgeTimer = -1
+cooldownTimer = -1
+canDodge = true
 
 hspd = 0
 vspd = 0

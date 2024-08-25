@@ -18,6 +18,12 @@ if (dodgeTimer > 0) {
         dodging = false
     }
 }
+if (cooldownTimer > 0) {
+    cooldownTimer -= 1;
+    if (cooldownTimer <= 0) {
+        canDodge = true
+    }
+}
 
 var _upKey = keyboard_check(global.upKey)
 var _downKey = keyboard_check(global.downKey)
@@ -47,7 +53,6 @@ playerSpeed = array_get(classStats[class], 5);
 playerRange = array_get(classStats[class], 6);
 
 if canMove = false{	var deltaMovementSpeed = 0	} else var deltaMovementSpeed = playerSpeed * global.deltaMultiplier;
-
 
 //variables for where I'm going to move to
 hspd = (_rightKey - _leftKey) * deltaMovementSpeed;
