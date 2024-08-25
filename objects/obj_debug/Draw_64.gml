@@ -1,3 +1,5 @@
+draw_set_font(fnt_ew)
+
 draw_set_color(c_white)
 
 var player = obj_playerMain
@@ -12,5 +14,7 @@ str[2] = string("Player direction: {0}", player.directionFacing)
 str[3] = string("Max HP: {0}\nAtk: {1}\nDef: {2} (not yet implemented)\nSpeed: {3} pixel(s)/second\nFiring Speed: {4} second(s)\nRange: {5} pixels", player.playerMaxHealth, player.playerAttack, player.playerDefense, player.playerSpeed, player.playerFiringSpeed, player.playerRange)
 str[4] = string("Player Timer: {0}\nEnemy timer: {1}", player.timer, enemy.timer)
 str[5] = string("Current Health: {0}", player.playerCurrentHealth)
+draw_set_halign(fa_left)
+draw_set_valign(fa_top)
 draw_text(0,0, currentMessage)
 draw_text(0, 15, str[currentMessage])

@@ -1,0 +1,13 @@
+menuText = "this is broken"
+
+titleScreenOptions[0] = ["Play", "Settings", "Credits", "Quit"]
+titleScreenOptions[1] = ["rm_firstTestRoom", "Back to Main Menu"]
+titleScreenOptions[2] = ["No functionality fuck you", "Back to Main Menu"]
+titleScreenOptions[3] = ["Joseph - Lead artist & director", "Me - coder", "blake - bitch", "Adrien - Story", "Ayvyn - Chef", "Wyatt - Hot"]
+
+currentMenu[0] = "Main"
+currentMenu[2] = "Settings"
+currentMenu[3] = "Credits"
+currentMenu[1] = "what"
+subMenu = 0
+index = 0
