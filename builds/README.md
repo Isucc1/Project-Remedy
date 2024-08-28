@@ -1,1 +1,11 @@
-forogt that i made the cleric speed like 9 px/s just to test something so build 8.25.24 still has that; my bad
+Added:
+    -    New Enemy types
+        -  Parent (original)
+        -  Mover
+        -  Chaser (WIP)
+        -  Pointer
+        -  Timer
+    -  Split attackHitbox into attackParent and attackEnemy
+    -  Fully implemented Mage's abilities
+    -  Implemented placeholder bullet attack
+    -  New map (Totally not inspired by a certain Midway Arcade game back from the early 80's)
