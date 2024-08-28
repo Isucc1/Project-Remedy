@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"player Sprites",
-    "path":"folders/Sprites/player Sprites.yy",
+    "path":"folders/Sprites/placeholder sprites/player Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

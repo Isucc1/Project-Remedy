@@ -1,3 +1,4 @@
+//varaibles
 roomMusic = noone
 currentlyPlaying = noone
 

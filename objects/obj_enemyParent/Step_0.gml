@@ -3,7 +3,7 @@ if enemyCurrentHealth <= 2{
 }
 if (timer > 0) {
     timer -= 1;
-    if (timer <= 0) {
+    if (timer <= 0) && enemyType != "Timer"{
         canFire = true
     }
 }

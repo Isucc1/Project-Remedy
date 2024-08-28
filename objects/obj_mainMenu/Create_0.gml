@@ -1,7 +1,7 @@
 menuText = "this is broken"
 
 titleScreenOptions[0] = ["Play", "Settings", "Credits", "Quit"]
-titleScreenOptions[1] = ["rm_firstTestRoom", "Back to Main Menu"]
+titleScreenOptions[1] = ["rm_firstTestRoom", "rm_maze", "Back to Main Menu"]
 titleScreenOptions[2] = ["No functionality fuck you", "Back to Main Menu"]
 titleScreenOptions[3] = ["Joseph - Lead artist & director", "Me - coder", "blake - bitch", "Adrien - Story", "Ayvyn - Chef", "Wyatt - Hot"]
 

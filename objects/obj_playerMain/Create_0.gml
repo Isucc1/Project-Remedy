@@ -1,7 +1,14 @@
+if !instance_exists(obj_camera){
+	instance_create_depth(0, 0, 0, obj_camera)
+}
+
+abilityOneCooldownTimer = -1
+abilityTwoCooldownTimer = -1
 timer = -1
 dodgeTimer = -1
 cooldownTimer = -1
 canDodge = true
+team = "good guys"
 
 hspd = 0
 vspd = 0
@@ -10,9 +17,12 @@ directionFacing = "south"
 
 invincible = false
 canFire = true
+canFireFirstAbility = true
+canFireSecondAbility = true
 canMove = true
 dead = false
 dodging = false
+inCutscene = false
 
 targetDelta = 1/60;
 
@@ -25,13 +35,13 @@ unlockedClasses = 0
 
 //Class' stats, formatted as: [sprite, health, defense, attack, firing rate, speed, range, primary ability, secondary ability, head sprite]
 //Low is 1; Med is 1.5; High is 2; Really High(????) is 2.5
-classStats[0] = [spr_adventurerPlaceholder, 150, 0.4, 5, 3, 1.5, 64, "boomerang", "SpeedBuff", spr_headAdventurer]	//adventurer stats
-classStats[1] = [spr_barbarianPlaceholder, 200, 0.2, 40, 5, 1.5, 32, "Rage", "FiringRateBuff", spr_headBarbarian]	//barbarian stats
-classStats[2] = [spr_tankPlaceholder, 150, 0.6, 30, 1, 1, 64, "Turret", "AttackBuff", spr_headTank]					//tank stats
-classStats[3] = [spr_clericPlaceholder, 100, 0.4, 15, 1, 2, 96, "Heal", "iFramesBuff", spr_headCleric]				//cleric stats
-classStats[4] = [spr_magePlaceholder, 100, 0.2, 55, 5, 2, 64, "FIREBALL", "Lightning", spr_headMage]				//mage stats
+classStats[0] = [spr_adventurerPlaceholder, 150, 0.4,  5, 2.5, 1.5, 64, "boomerang", "SpeedBuff",		spr_headAdventurer]	//adventurer stats
+classStats[1] = [spr_barbarianPlaceholder,	200, 0.2, 40, 4.5, 1.5, 32, "Rage",      "FiringRateBuff",	spr_headBarbarian]		//barbarian stats
+classStats[2] = [spr_tankPlaceholder,		150, 0.6, 30, 0.8,   1, 64, "Turret",    "AttackBuff",		spr_headTank]					//tank stats
+classStats[3] = [spr_clericPlaceholder,		100, 0.4, 15, 0.8,   2, 96, "Heal",      "iFramesBuff",		spr_headCleric]					//cleric stats
+classStats[4] = [spr_magePlaceholder,		100, 0.2, 55, 4.5,   2, 64, "FIREBALL",  "Lightning",		spr_headMage]					//mage stats
 
-//default stats    
+//default stats
 sprite_index = spr_adventurerPlaceholder	//just default adventurer
 playerMaxHealth = 150		//this is low; med is 1.5x; high is 2x; measured in numbers
 playerAttack = 5			//low is 15 dmg/hit; med is 30; high is 40; very high is 55; measured in numbers

@@ -1,0 +1,1 @@
+obj_playerMain.inCutscene = false

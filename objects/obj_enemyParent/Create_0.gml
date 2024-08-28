@@ -1,5 +1,8 @@
 depth = y - 400
 
+team = "Evil team"
+enemyType = "basic"
+
 //Base enemy stats
 sprite_index = spr_sandbag
 enemyMaxHealth = 50		//base health
@@ -14,5 +17,8 @@ enemyCurrentHealth = enemyMaxHealth
 enemyFacing = "south"
 
 timer = -1
+paralyzeTimer = -1
+
 canFire = true
+canMove = true
 
