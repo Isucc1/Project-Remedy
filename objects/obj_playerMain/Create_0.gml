@@ -1,5 +1,5 @@
-if !instance_exists(obj_camera){
-	instance_create_depth(0, 0, 0, obj_camera)
+if !instance_exists(obj_fallbackCamera){
+	instance_create_depth(0, 0, 0, obj_fallbackCamera)
 }
 
 abilityOneCooldownTimer = -1
@@ -11,7 +11,6 @@ abilityTwoCooldownMeter = 1
 timer = -1
 dodgeTimer = -1
 cooldownTimer = -1
-breadcrumbTimer = -1
 canDodge = true
 team = "good guys"
 

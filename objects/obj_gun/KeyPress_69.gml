@@ -2,7 +2,7 @@
 if !layer_exists("hitboxes"){
 	layer_create(0, "hitboxes")
 }
-if enemy.canFire = true{
+if enemy.canFire = true && onTimer == false{
 	var attack = instance_create_layer(x + lengthdir_x(barrel[0],barrel[0+1] + image_angle), y + lengthdir_y(barrel[0], barrel[0+1] + image_angle), "hitboxes", obj_attackEnemy);
 	attack.speed = 6
 	attack.source = "Evil team"

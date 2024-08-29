@@ -14,7 +14,6 @@ if onTimer = true{
 		}
 	}
 }
-if enemy.canFire && timer = 0 show_debug_message("target aquired")
 
 barrel[1] = point_direction(0,0,-11,-4.5);
 barrel[0] = point_distance(0,0,-11,-4.5);

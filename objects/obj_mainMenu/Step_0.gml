@@ -1,3 +1,7 @@
+if keyboard_check_pressed(global.upKey) index--
+else if keyboard_check_pressed(global.downKey) index++
+
+
 if index == -1{
 	index = (array_length(titleScreenOptions[subMenu]) - 1) ;
 } else if index == (array_length(titleScreenOptions[subMenu])){
