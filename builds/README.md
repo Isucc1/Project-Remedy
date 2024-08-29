@@ -1,16 +1,13 @@
-Added:
+HOLY SHIT IM THROWING OUT THE PROFESSIONAL CHANGELOG BECAUSE WE GOT ACTUAL CHASER AI WOOOOOOOOOOOOO
 
-    -  New Enemy types
-       - Parent (original)
-       - Mover
-       - Chaser (WIP)
-       - Pointer
-       - Timer
-       
-    - Split attackHitbox into attackParent and attackEnemy
-    
-    - Fully implemented Mage's abilities
-    
-    - Implemented placeholder bullet attack
-    
-    - New map (Totally not inspired by a certain Midway Arcade game back from the early 80's)
+HE GONE CHASE YA, AND IF HE HAS SIGHT OF YA, HE GONE SHOOT YA
+
+WOOOOOOOOOOOOOOOO
+THIS TOOK FAR TOO LONG FOR HOW SIMPLE IT WAS
+WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+also we got like music in the Maze room, changed some of the keybinds to make more sense, added some health bars, and did a bunch of other stuff in the code
+
+but WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO CHASER AIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
+LETS FUCKING GOOOOOOO
