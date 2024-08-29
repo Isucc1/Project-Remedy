@@ -9,3 +9,4 @@ timerOne = -1
 timerTwo = -1
 
 if attackType = "Lightning"	attackPower *= 0.5
+

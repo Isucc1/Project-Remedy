@@ -41,8 +41,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"attack sprites",
-    "path":"folders/Sprites/placeholder sprites/attack sprites.yy",
+    "name":"effect sprites",
+    "path":"folders/Sprites/placeholder sprites/effect sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

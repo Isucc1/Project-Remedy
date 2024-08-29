@@ -9,7 +9,9 @@ if attack.source != team{
 			attack.sprite_index = spr_explosion
 			attack.image_xscale = 3
 			attack.image_yscale = 3
-			if attack.timerTwo <= 0{	attack.timerTwo = 20	}
+			if attack.timerTwo <= 0{	
+				attack.timerTwo = 20	
+			}
 			attack.speed = 0
 			attack.attackPower = attack.attackPower * 0.5
 			attack.source = "Everyone"

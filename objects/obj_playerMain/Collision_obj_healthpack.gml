@@ -1,0 +1,1 @@
+playerCurrentHealth = playerMaxHealth

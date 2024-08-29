@@ -38,7 +38,7 @@ switch(direction){
 	break
 }
 
-show_debug_message(string("{0}, {1}, {2}", timer, image_xscale, image_yscale))
+//show_debug_message(string("{0}, {1}, {2}", timer, image_xscale, image_yscale))
 
 if vanishing = true || image_alpha < 1{
 	image_alpha -= .1

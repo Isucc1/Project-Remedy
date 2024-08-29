@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"mus_pacMan",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":0,
+  "bitRate":16,
+  "compression":0,
+  "conversionMode":0,
+  "duration":4.623673,
+  "name":"mus_pacMan",
+  "parent":{
+    "name":"music",
+    "path":"folders/Sounds/music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":5512,
+  "soundFile":"mus_pacMan.mp3",
+  "type":0,
+  "volume":1.0,
+}

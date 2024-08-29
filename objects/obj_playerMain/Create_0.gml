@@ -4,16 +4,21 @@ if !instance_exists(obj_camera){
 
 abilityOneCooldownTimer = -1
 abilityTwoCooldownTimer = -1
+
+abilityOneCooldownMeter = 1
+abilityTwoCooldownMeter = 1
+
 timer = -1
 dodgeTimer = -1
 cooldownTimer = -1
+breadcrumbTimer = -1
 canDodge = true
 team = "good guys"
 
 hspd = 0
 vspd = 0
 
-directionFacing = "south"
+directionFacing = 2
 
 invincible = false
 canFire = true

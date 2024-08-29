@@ -1,3 +1,5 @@
+
+
 //updating depth
 depth = y - 400
 
@@ -6,22 +8,7 @@ depth = y - 400
 if playerCurrentHealth <= 0{	dead = true	}
 if dead{	canMove = false	}
 
-//Delta timers I found online; don't ask how it works I'm clueless
-if (abilityOneCooldownTimer > 0) {
-	abilityOneCooldownTimer -= 1;
-		if (abilityOneCooldownTimer <= 0) {
-			canFireFirstAbility = true
-		}
-	}
-if (abilityTwoCooldownTimer > 0) {
-	abilityTwoCooldownTimer -= 1;
-		if (abilityTwoCooldownTimer <= 0) {
-			canFireSecondAbility = true
-		}
-	}
-if canFireFirstAbility && canFireSecondAbility{
-	canFire = true
-} else canFire = false
+//delta timers
 if (dodgeTimer > 0) {
     dodgeTimer -= 1;
     if (dodgeTimer <= 0) {
@@ -42,10 +29,10 @@ var _leftKey =	keyboard_check(global.leftKey)
 var _rightKey = keyboard_check(global.rightKey)
 
 //doing directions
-if _upKey{			directionFacing = "north"	}
-else if _downKey {	directionFacing = "south"	}
-else if _leftKey {	directionFacing = "east"	}
-else if _rightKey{	directionFacing = "west"	}
+if _upKey{			directionFacing = 0	}
+else if _downKey {	directionFacing = 2	}
+else if _leftKey {	directionFacing = 1	}
+else if _rightKey{	directionFacing = 3	}
 
 //updating variables
 global.actualDelta =	 delta_time/1000000;
@@ -72,17 +59,13 @@ vspd = (_downKey - _upKey)		* deltaMovementSpeed;
 //dodging stuff
 if dodging{
 	switch(directionFacing){
-		case "south":	vspd =  5	break;
-		case "north":	vspd = -5	break;
-		case "west" :	hspd =  5	break;
-		case "east" :	hspd = -5	break;
+		case 2:	vspd =  5	break;
+		case 0:	vspd = -5	break;
+		case 3 :	hspd =  5	break;
+		case 1 :	hspd = -5	break;
 	}
 }
 
-if inCutscene = false{
-	camera_set_view_pos(view_camera[0], x-180, y-120)
-	camera_set_view_size(view_camera[0], 360, 240)
-}
 
 //moving
 if !(place_meeting((x + hspd), y, obj_collisionParent)){

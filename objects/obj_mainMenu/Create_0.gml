@@ -13,3 +13,5 @@ subMenu = 0
 index = 0
 
 instance_create_depth(0, 0, 0, obj_musicHandler)
+
+audio_play_sound(mus_mainMenu, 1, true)
