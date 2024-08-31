@@ -8,6 +8,9 @@ if onTimer = true{
 			attack.attackPower = enemy.enemyAttack
 			attack.timer = enemy.enemyRange
 			timer = enemy.enemyFiringSpeed;
+			if room = rm_maze{
+				audio_play_sound(choose(snd_gunMatt, snd_powMatt, snd_shootMatt), 10, false)
+			}
 		}
 		else if (timer <= 0) && !enemy.canFire{
 			timer = enemy.enemyFiringSpeed

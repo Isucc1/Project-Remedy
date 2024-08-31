@@ -2,7 +2,7 @@ var attack = other
 if attack.source != team{
 	if !((enemyCurrentHealth - attack.attackPower) > enemyCurrentHealth)
 			enemyCurrentHealth -= attack.attackPower
-		else instance_destroy(self)
+		else	instance_destroy(self)
 
 	switch(attack.attackType){
 		case "Fireball" :

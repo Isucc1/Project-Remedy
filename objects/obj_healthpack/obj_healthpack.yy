@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_healthpack",
-    "path":"sprites/spr_healthpack/spr_healthpack.yy",
+    "name":"spr_LegallyDistinctVegetable",
+    "path":"sprites/spr_LegallyDistinctVegetable/spr_LegallyDistinctVegetable.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -12,5 +12,8 @@ if canMove{
 	attack.speed = 6
 	attack.sprite_index = spr_attackPlaceholder
 	attack.attackType = "bullet"
+	if room = rm_maze{
+		audio_play_sound(choose(snd_gunJoey, snd_powJoey, snd_shootJoey), 10, false)
+	}
 }
 //NEED TO PUT IN COOLDOWN
