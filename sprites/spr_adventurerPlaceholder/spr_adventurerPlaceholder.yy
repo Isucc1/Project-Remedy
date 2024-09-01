@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"player",
-    "path":"folders/Sprites/placeholder sprites/character sprites/player.yy",
+    "name":"adventurer",
+    "path":"folders/Sprites/placeholder sprites/character sprites/classes/adventurer.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

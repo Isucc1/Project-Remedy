@@ -48,8 +48,8 @@
     "path":"sprites/spr_adventurerPlaceholder/spr_adventurerPlaceholder.yy",
   },
   "spriteMaskId":{
-    "name":"spr_adventurerPlaceholder",
-    "path":"sprites/spr_adventurerPlaceholder/spr_adventurerPlaceholder.yy",
+    "name":"spr_hitbox",
+    "path":"sprites/spr_hitbox/spr_hitbox.yy",
   },
   "visible":true,
 }

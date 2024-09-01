@@ -8,6 +8,9 @@ abilityTwoCooldownTimer = -1
 abilityOneCooldownMeter = 1
 abilityTwoCooldownMeter = 1
 
+vFacing = false
+hFacing = false
+
 timer = -1
 dodgeTimer = -1
 cooldownTimer = -1
@@ -37,13 +40,19 @@ class = 0
 unlockedClasses = 0
 
 
-//Class' stats, formatted as: [sprite, health, defense, attack, firing rate, speed, range, primary ability, secondary ability, head sprite]
+//Class' stats, formatted as: [name, health, defense, attack, firing rate, speed, range, primary ability, secondary ability, head sprite]
 //Low is 1; Med is 1.5; High is 2; Really High(????) is 2.5
-classStats[0] = [spr_adventurerPlaceholder, 150, 0.4,  5, 2.5, 1.5, 64, "boomerang", "SpeedBuff",		spr_headAdventurer]	//adventurer stats
-classStats[1] = [spr_barbarianPlaceholder,	200, 0.2, 40, 4.5, 1.5, 32, "Rage",      "FiringRateBuff",	spr_headBarbarian]		//barbarian stats
-classStats[2] = [spr_tankPlaceholder,		150, 0.6, 30, 0.8,   1, 64, "Turret",    "AttackBuff",		spr_headTank]					//tank stats
-classStats[3] = [spr_clericPlaceholder,		100, 0.4, 15, 0.8,   2, 96, "Heal",      "iFramesBuff",		spr_headCleric]					//cleric stats
-classStats[4] = [spr_magePlaceholder,		100, 0.2, 55, 4.5,   2, 64, "FIREBALL",  "Lightning",		spr_headMage]					//mage stats
+classStats[0] = ["adventurer",	150, 0.4,  5, 2.5, 1.5, 64, "boomerang", "SpeedBuff"]		//adventurer stats
+classStats[1] = ["barbarian",	200, 0.2, 40, 4.5, 1.5, 32, "Rage",      "FiringRateBuff"]	//barbarian stats
+classStats[2] = ["tank",		150, 0.6, 30, 0.8,   1, 64, "Turret",    "AttackBuff"]		//tank stats
+classStats[3] = ["cleric",		100, 0.4, 15, 0.8,   2, 96, "Heal",      "iFramesBuff"]		//cleric stats
+classStats[4] = ["mage",		100, 0.2, 55, 4.5,   2, 64, "FIREBALL",  "Lightning"]		//mage stats
+
+sprites[0] = [spr_adventurerPlaceholder, spr_adventurerBackPlaceholder, spr_headAdventurer]
+sprites[1] = [spr_barbarianPlaceholder, spr_barbarianBackPlaceholder, spr_headBarbarian]
+sprites[2] = [spr_tankPlaceholder, spr_tankBackPlaceholder, spr_headTank]
+sprites[3] = [spr_clericPlaceholder, spr_clericBackPlaceholder, spr_headCleric]
+sprites[4] = [spr_magePlaceholder, spr_mageBackPlaceholder, spr_headMage]
 
 //default stats
 sprite_index = spr_adventurerPlaceholder	//just default adventurer

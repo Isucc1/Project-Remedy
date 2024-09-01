@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"player head sprites",
-    "path":"folders/Sprites/placeholder sprites/character sprites/player/player head sprites.yy",
+    "name":"mage",
+    "path":"folders/Sprites/placeholder sprites/character sprites/classes/mage.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

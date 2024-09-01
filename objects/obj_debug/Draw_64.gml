@@ -1,4 +1,4 @@
-draw_set_font(fnt_ew)
+draw_set_font(global.mainFont)
 
 draw_set_color(c_white)
 
@@ -16,5 +16,4 @@ str[4] = string("Player Timer: {0}\nEnemy timer: {1}", player.timer, enemy.timer
 str[5] = string("Current Health: {0}", player.playerCurrentHealth)
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
-draw_text(0,0, currentMessage)
-draw_text(0, 15, str[currentMessage])
+draw_text_ext_transformed(0, 0, str[currentMessage], 24, 600, 1, 1, 0)

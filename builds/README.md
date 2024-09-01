@@ -1,13 +1,9 @@
-HOLY SHIT IM THROWING OUT THE PROFESSIONAL CHANGELOG BECAUSE WE GOT ACTUAL CHASER AI WOOOOOOOOOOOOO
+Build 8/31/24
 
-HE GONE CHASE YA, AND IF HE HAS SIGHT OF YA, HE GONE SHOOT YA
-
-WOOOOOOOOOOOOOOOO
-THIS TOOK FAR TOO LONG FOR HOW SIMPLE IT WAS
-WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-
-also we got like music in the Maze room, changed some of the keybinds to make more sense, added some health bars, and did a bunch of other stuff in the code
-
-but WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO CHASER AIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
-LETS FUCKING GOOOOOOO
+- Added:
+    - New *Temporary* animation; sprites will hopefully be made soon
+        Has front sprite and back sprite; simply flips the image to face left and right; if I_was_me is willing to, might make unique sprites for all four directions, but for now only two unique sprites
+    - New font
+        Stolen from google and temporary; will hopefully finish custom font soon
+    Changed hitbox of player by *one* pixel... felt worth mentioning in the moment but it really isn't anything
+    shit ton of behind the scenes stuff most won't see nor understand. This commit alone has 300+ changes compared to the normal 70-80
