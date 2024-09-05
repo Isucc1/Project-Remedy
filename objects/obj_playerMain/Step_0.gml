@@ -1,10 +1,9 @@
 //updating depth
 depth = y - 400
 
-
 //death
 if playerCurrentHealth <= 0{	dead = true	}
-if dead{	canMove = false	}
+if dead || global.roomType = "Cutscene"{	canMove = false	}
 
 //delta timers
 if (dodgeTimer > 0) {
@@ -32,10 +31,13 @@ else if _downKey {	directionFacing = 2; vFacing = false;}
 else if _leftKey {	directionFacing = 1; hFacing = true;}
 else if _rightKey{	directionFacing = 3; hFacing = false;}
 
-if vFacing = true		 sprite_index = array_get(sprites[class], 1);	
-else if vFacing = false  sprite_index = array_get(sprites[class], 0);	
-if hFacing = true image_xscale = -1		
-else if hFacing = false image_xscale = 1
+if vFacing sprite_index = array_get(sprites[class], 1);	
+else if !vFacing sprite_index = array_get(sprites[class], 0);	
+
+if		hFacing && room != rm_seriousRoom image_xscale = -1		
+else if !hFacing && room != rm_seriousRoom image_xscale = 1
+else if hFacing && room == rm_seriousRoom image_xscale = -1.5
+else if	!hFacing && room == rm_seriousRoom image_xscale = 1.5
 
 //updating variables
 global.actualDelta =	 delta_time/1000000;
@@ -53,7 +55,7 @@ playerFiringSpeed = array_get(classStats[class], 4);
 playerSpeed =		array_get(classStats[class], 5);
 playerRange =		array_get(classStats[class], 6);
 
-if canMove = false{	var deltaMovementSpeed = 0	} else var deltaMovementSpeed = playerSpeed * global.deltaMultiplier;
+if canMove = false  || global.roomType = "Serious"{	var deltaMovementSpeed = 0	} else var deltaMovementSpeed = playerSpeed * global.deltaMultiplier;
 
 //variables for where I'm going to move to
 hspd = (_rightKey - _leftKey)	* deltaMovementSpeed;
@@ -80,4 +82,12 @@ if !(place_meeting(x, (y + vspd), obj_collisionParent)){
 
 if hspd != 0 || vspd != 0 image_speed = 1; else image_speed = 0
 
-show_debug_message(hFacing)
+if global.roomType = "Puzzle" && keyboard_check_pressed(vk_space){
+	switch(directionFacing){
+	case 0: instance_create_depth(x,	y-10,	0, obj_interactionBox)	break;
+	case 1: instance_create_depth(x-10, y,		0, obj_interactionBox)	break;
+	case 2: instance_create_depth(x,	y+10,	0, obj_interactionBox)	break;
+	case 3: instance_create_depth(x+10, y,		0, obj_interactionBox)	break;
+	}
+	
+}

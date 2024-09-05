@@ -12,8 +12,8 @@
   "duration":0.576,
   "name":"snd_shootJoey",
   "parent":{
-    "name":"sound effects",
-    "path":"folders/Sounds/sound effects.yy",
+    "name":"gun sound effects",
+    "path":"folders/Sounds/sound effects/gun sound effects.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

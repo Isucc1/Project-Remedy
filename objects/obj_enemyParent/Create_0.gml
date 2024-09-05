@@ -2,6 +2,7 @@ depth = y - 400
 
 team = "Evil team"
 enemyType = "basic"
+dying = false
 
 //Base enemy stats
 sprite_index = spr_sandbag

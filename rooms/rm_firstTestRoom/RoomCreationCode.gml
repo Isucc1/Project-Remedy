@@ -1,1 +1,1 @@
-obj_playerMain.inCutscene = false
+global.roomType = "Combat"

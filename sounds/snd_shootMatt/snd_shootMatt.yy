@@ -12,8 +12,8 @@
   "duration":0.504,
   "name":"snd_shootMatt",
   "parent":{
-    "name":"sound effects",
-    "path":"folders/Sounds/sound effects.yy",
+    "name":"gun sound effects",
+    "path":"folders/Sounds/sound effects/gun sound effects.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
