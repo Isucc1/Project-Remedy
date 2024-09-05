@@ -1,5 +1,5 @@
 //updating depth
-depth = y - 400
+depth = -y
 
 //death
 if playerCurrentHealth <= 0{	dead = true	}

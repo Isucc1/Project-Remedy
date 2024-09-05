@@ -1,3 +1,2 @@
-if instance_exists(obj_playerMain){
-	obj_playerMain.inCutscene = true
-}
+global.roomType = "Cutscene"
+draw_set_font(global.mainFont)

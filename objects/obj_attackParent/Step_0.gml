@@ -1,4 +1,4 @@
-depth = y - 400
+depth = -y
 var vanishing = false
 
 if (direction = 0 || direction = 180) && attackType = "Lightning"

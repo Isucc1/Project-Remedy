@@ -45,7 +45,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.0.169",
   },
   "name":"Project REMedy",
   "resources":[
@@ -79,6 +79,7 @@
     {"id":{"name":"rm_seriousRoom","path":"rooms/rm_seriousRoom/rm_seriousRoom.yy",},},
     {"id":{"name":"scr_globalShit","path":"scripts/scr_globalShit/scr_globalShit.yy",},},
     {"id":{"name":"scr_initGame","path":"scripts/scr_initGame/scr_initGame.yy",},},
+    {"id":{"name":"scr_resetEverything","path":"scripts/scr_resetEverything/scr_resetEverything.yy",},},
     {"id":{"name":"mus_mainMenu","path":"sounds/mus_mainMenu/mus_mainMenu.yy",},},
     {"id":{"name":"mus_pacMan","path":"sounds/mus_pacMan/mus_pacMan.yy",},},
     {"id":{"name":"snd_gunJoey","path":"sounds/snd_gunJoey/snd_gunJoey.yy",},},
@@ -93,7 +94,7 @@
     {"id":{"name":"spr_barbarianBackPlaceholder","path":"sprites/spr_barbarianBackPlaceholder/spr_barbarianBackPlaceholder.yy",},},
     {"id":{"name":"spr_barbarianPlaceholder","path":"sprites/spr_barbarianPlaceholder/spr_barbarianPlaceholder.yy",},},
     {"id":{"name":"spr_boxRoundedCorners","path":"sprites/spr_boxRoundedCorners/spr_boxRoundedCorners.yy",},},
-    {"id":{"name":"spr_boxRoundedCornersThick","path":"sprites/spr_boxRoundedCornersThick/spr_boxRoundedCornersThick.yy",},},
+    {"id":{"name":"spr_boxRoundedCornersLarge","path":"sprites/spr_boxRoundedCornersLarge/spr_boxRoundedCornersLarge.yy",},},
     {"id":{"name":"spr_bush","path":"sprites/spr_bush/spr_bush.yy",},},
     {"id":{"name":"spr_clericBackPlaceholder","path":"sprites/spr_clericBackPlaceholder/spr_clericBackPlaceholder.yy",},},
     {"id":{"name":"spr_clericPlaceholder","path":"sprites/spr_clericPlaceholder/spr_clericPlaceholder.yy",},},

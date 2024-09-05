@@ -1,3 +1,5 @@
+depth = -y
+
 if enemyCurrentHealth <= 2{
 	dying = true
 	instance_destroy()

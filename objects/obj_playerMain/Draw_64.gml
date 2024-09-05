@@ -6,8 +6,8 @@ if global.roomType != "Serious"{
 }
 
 if global.roomType == "Combat"{
-	draw_healthbar(318, 230, 354, 235,(abilityOneCooldownMeter*100),c_black,c_yellow,c_yellow,0,true,true)
-	//draw_sprite_stretched_ext(spr_boxRoundedCornersThick,0,635,461,76,12,c_white,1)
-	draw_healthbar(318, 225, 354, 220,(abilityTwoCooldownMeter*100),c_black,#ffaa00,#ffaa00,0,true,true)
-	//draw_sprite_stretched_ext(spr_boxRoundedCornersThick,0,635,446,76,12,c_white,1)
+	draw_healthbar(318, 230, 354, 235,(abilityOneCooldownMeter*100),c_black,c_yellow,c_yellow,0,true,false)
+	draw_sprite_stretched_ext(spr_boxRoundedCornersLarge,0,635,461,76,12,c_white,1)
+	draw_healthbar(318, 220, 354, 225,(abilityTwoCooldownMeter*100),c_black,#ffaa00,#ffaa00,0,true,false)
+	draw_sprite_stretched_ext(spr_boxRoundedCornersLarge,0,635,446,76,12,c_white,1)
 }
