@@ -2,8 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_resetEverything(){
 	
+	room = rm_mainMenu
+	
 	global.roomType = "Cutscene"
-	global.paused = false
+	obj_pause.pause = false
 
 	display_set_gui_size(360, 240)
 	draw_set_font(global.mainFont)

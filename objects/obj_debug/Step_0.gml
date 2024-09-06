@@ -1,1 +1,3 @@
-if global.roomType == "Serious" instance_destroy()
+if global.roomType == "Serious" || global.debug == false{
+	instance_destroy()
+}

@@ -1,3 +1,5 @@
+if !instance_exists(enemy){	instance_destroy()	}
+
 if onTimer = true{
 	if (timer > 0) {
     timer -= 1;
@@ -20,8 +22,6 @@ if onTimer = true{
 
 barrel[1] = point_direction(0,0,-11,-4.5);
 barrel[0] = point_distance(0,0,-11,-4.5);
-
-if !instance_exists(enemy){	instance_destroy()	}
 
 direction = point_direction(x, y, obj_playerMain.x, obj_playerMain.y)
 
