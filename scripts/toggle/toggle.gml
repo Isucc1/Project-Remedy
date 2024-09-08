@@ -1,5 +1,5 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+/// @desc Toggle a boolean value
+/// @param {bool} boolean value to need to toggle
 function toggle(argument0){
 	if argument0 == true{
 		argument0 = false

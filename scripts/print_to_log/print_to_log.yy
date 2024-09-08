@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"print_to_log",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"print_to_log",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

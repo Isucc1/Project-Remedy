@@ -6,16 +6,16 @@ if canMove && global.roomType = "Combat"{
 		var attack = instance_create_layer(x, y, "hitboxes", obj_attackParent)
 			attack.source = "Good Team"
 			attack.canHurt = true
-			attack.attackPower = playerAttack
-			attack.timerOne = playerRange
+			attack.attackPower = global.playerAttack
+			attack.timerOne = global.playerRange
 			attack.direction = directionFacing * 90 + 90
 			abilityOneCooldownMeter -= 1
-		switch (class){
+		switch (global.class){
 			case 4:
 				attack.speed = 4
 				attack.sprite_index = spr_lightningPlaceholder
 				attack.attackType = "Lightning"
-				attack.attackPower = playerAttack * 0.5
+				attack.attackPower = global.playerAttack * 0.5
 			break;
 		
 			default :

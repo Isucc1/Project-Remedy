@@ -1,2 +1,2 @@
 importantObjects[0] = obj_pause
-importantObjects[2] = obj_playerMain
+importantObjects[1] = obj_playerMain

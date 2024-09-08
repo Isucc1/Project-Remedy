@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Latest Build:  9/5/24
 
     Added:
@@ -10,3 +11,16 @@ Latest Build:  9/5/24
             I_was_me was complaining about not knowing space bar was confirm so there
         - Fixed the unlocked classes not displaying in the top right
             Didn't even notice this was missing until I changed something for debugging lol
+=======
+Build 9/8/24
+
+- Changelog
+    - Stat editor
+        Change stats of the currently selected class
+        Just pause the game (by clicking the pause button with the mouse), select debug options, and "Edit statsvalues" (supposed to be stats/values but i dont have a / in the font lmao)
+        Wont show the currently selected stat, but you'll figure it out once you press A or D (left/right)
+    - Other stuff changed
+        I changed several things behind the scenes, if something is broken i have no clue lmao
+    - Somehow broke some parts of the camera
+        it works fine for the most part still, but several things that are supposed to be stuck to the camera kinda jitter when you move; ie the pause button, the player, that's all i've noticed
+>>>>>>> Stashed changes

@@ -6,16 +6,16 @@ if canMove && global.roomType = "Combat"{
 		var attack = instance_create_layer(x, y, "hitboxes", obj_attackParent)
 			attack.source = "Good Team"
 			attack.canHurt = true
-			attack.attackPower = playerAttack
-			attack.timerOne = playerRange
+			attack.attackPower = global.playerAttack
+			attack.timerOne = global.playerRange
 			attack.direction = directionFacing * 90 + 90
 			abilityTwoCooldownMeter -= 1
-		switch (class){
+		switch (global.class){
 			case 4:	
 				attack.speed = 2
 				attack.sprite_index = spr_fireballPlaceholder
 				attack.attackType = "Fireball"
-				attack.attackPower = playerAttack * 2
+				attack.attackPower = global.playerAttack * 2
 			break;
 	
 			default :

@@ -1,1 +1,1 @@
-playerCurrentHealth = playerMaxHealth
+playerCurrentHealth = global.playerMaxHealth

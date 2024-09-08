@@ -31,8 +31,8 @@ else if _downKey {	directionFacing = 2; vFacing = false;}
 else if _leftKey {	directionFacing = 1; hFacing = true;}
 else if _rightKey{	directionFacing = 3; hFacing = false;}
 
-if vFacing sprite_index = array_get(sprites[class], 1);	
-else if !vFacing sprite_index = array_get(sprites[class], 0);	
+if vFacing sprite_index = array_get(sprites[global.class], 1);	
+else if !vFacing sprite_index = array_get(sprites[global.class], 0);	
 
 if		hFacing && room != rm_seriousRoom image_xscale = -1		
 else if !hFacing && room != rm_seriousRoom image_xscale = 1
@@ -47,15 +47,15 @@ global.deltaMultiplier = global.actualDelta/targetDelta;
 if dead sprite_index = spr_deathGravePlaceholder
 
 
-//making sure the stats actually stay consistance
-playerMaxHealth =	array_get(classStats[class], 1);
-playerDefense =		array_get(classStats[class], 2);
-playerAttack =		array_get(classStats[class], 3)
-playerFiringSpeed = array_get(classStats[class], 4);
-playerSpeed =		array_get(classStats[class], 5);
-playerRange =		array_get(classStats[class], 6);
+//making sure the stats actually stay consistent
+global.playerMaxHealth =	array_get(global.classStats[global.class], 1);
+global.playerDefense =		array_get(global.classStats[global.class], 2);
+global.playerAttack =		array_get(global.classStats[global.class], 3)
+global.playerFiringSpeed = array_get(global.classStats[global.class], 4);
+global.playerSpeed =		array_get(global.classStats[global.class], 5);
+global.playerRange =		array_get(global.classStats[global.class], 6);
 
-if canMove = false  || global.roomType = "Serious"{	var deltaMovementSpeed = 0	} else var deltaMovementSpeed = playerSpeed * global.deltaMultiplier;
+if canMove = false  || global.roomType = "Serious"{	var deltaMovementSpeed = 0	} else var deltaMovementSpeed = global.playerSpeed * global.deltaMultiplier;
 
 //variables for where I'm going to move to
 hspd = (_rightKey - _leftKey)	* deltaMovementSpeed;
@@ -89,5 +89,10 @@ if global.roomType = "Puzzle" && keyboard_check_pressed(vk_space){
 	case 2: instance_create_depth(x,	y+10,	0, obj_interactionBox)	break;
 	case 3: instance_create_depth(x+10, y,		0, obj_interactionBox)	break;
 	}
-	
+}
+
+if !instance_exists(obj_pause) instance_create_depth(0, 0, 0, obj_pause)
+
+if instance_number(obj_playerMain) > 1{
+	instance_destroy()
 }
