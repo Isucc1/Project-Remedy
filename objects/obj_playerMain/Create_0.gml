@@ -15,6 +15,7 @@ hFacing = false
 timer = -1
 dodgeTimer = -1
 cooldownTimer = -1
+roomTimer = -1
 canDodge = true
 team = "good guys"
 

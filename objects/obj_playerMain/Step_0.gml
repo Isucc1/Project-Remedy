@@ -73,10 +73,10 @@ if dodging{
 
 
 //moving
-if !(place_meeting((x + hspd), y, obj_collisionParent)){
+if !(position_meeting((x + hspd), y + 10, obj_collisionParent)){
 	x += hspd;
 }
-if !(place_meeting(x, (y + vspd), obj_collisionParent)){
+if !(position_meeting(x, ((y + 10) + vspd), obj_collisionParent)){
 	y += vspd;
 }
 
