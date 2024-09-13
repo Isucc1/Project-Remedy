@@ -12,9 +12,9 @@ if timer > 0{
 	}
 }
 switch(phase){
-	case 0: image_alpha += 1/(fadeInTime);	break;
+	case 0: image_alpha += 1/(fadeOutTime);	break;
 	case 1: image_alpha = 1					break;
-	case 2: image_alpha -= 1/(fadeInTime);	break;
+	case 2: image_alpha -= 1/(fadeInTime); if obj_playerMain.transitioning == true obj_playerMain.transitioning = false;	break;
 	default: instance_destroy()				break;
 }
 

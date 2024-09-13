@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_roomTransition",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_roomTransition",
   "overriddenProperties":[],
@@ -25,7 +23,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"TargetRoom","filters":[
+        "GMRoom",
+      ],"listItems":[],"multiselect":false,"name":"TargetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rm_seriousRoom","path":"rooms/rm_seriousRoom/rm_seriousRoom.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_seriousRoom","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"TargetX","filters":[],"listItems":[],"multiselect":false,"name":"TargetX","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"180","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"TargetY","filters":[],"listItems":[],"multiselect":false,"name":"TargetY","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"162","varType":1,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

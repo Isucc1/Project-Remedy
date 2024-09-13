@@ -15,7 +15,8 @@ hFacing = false
 timer = -1
 dodgeTimer = -1
 cooldownTimer = -1
-roomTimer = -1
+roomTimer = -1;
+
 canDodge = true
 team = "good guys"
 
@@ -32,6 +33,7 @@ canMove = true
 dead = false
 dodging = false
 inCutscene = false
+transitioning = false //gay rights and shit
 
 targetDelta = 1/60;
 

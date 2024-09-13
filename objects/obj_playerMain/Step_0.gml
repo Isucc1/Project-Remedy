@@ -3,7 +3,7 @@ depth = -y
 
 //death
 if playerCurrentHealth <= 0{	dead = true	}
-if dead || global.roomType = "Cutscene"{	canMove = false	}
+if dead || global.roomType = "Cutscene" || transitioning{	canMove = false	} else canMove = true
 
 //delta timers
 if (dodgeTimer > 0) {
@@ -96,3 +96,36 @@ if !instance_exists(obj_pause) instance_create_depth(0, 0, 0, obj_pause)
 if instance_number(obj_playerMain) > 1{
 	instance_destroy()
 }
+
+if position_meeting(x, y, obj_roomTransition){
+		var closeTransition = instance_nearest(x,y,obj_roomTransition);
+		var _room = closeTransition.TargetRoom;
+		var _x = closeTransition.TargetX;
+		var _y = closeTransition.TargetY;
+	if  !transitioning{
+		fade(15, 30, 15)
+	
+		roomTimer = 60;
+	
+		transitioning = true
+	}
+	if transitioning{
+		if closeTransition.TargetRoom == rm_seriousRoom{
+			image_xscale = 1.5
+			image_yscale = 1.5
+		}
+			if roomTimer > 0{
+				roomTimer -= (delta_time/16000)
+				if roomTimer < 45 && roomTimer > 40{
+					change_room(_room, _x, _y)
+				} if roomTimer <= 0{
+					transitioning = false
+				}
+		}
+	}
+
+	show_debug_message(transitioning)
+	
+} else if !position_meeting(x, y, obj_roomTransition)	transitioning = false
+
+if keyboard_check_pressed(vk_f7) show_debug_message(transitioning)
