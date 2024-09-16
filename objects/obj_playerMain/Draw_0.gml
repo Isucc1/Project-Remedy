@@ -1,4 +1,5 @@
 draw_self()
+
 if global.roomType != "Serious"{
 	var healthPercent = (playerCurrentHealth/global.playerMaxHealth) * 100
 

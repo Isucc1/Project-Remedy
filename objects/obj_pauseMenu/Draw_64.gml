@@ -3,8 +3,8 @@ if instance_exists(obj_playerMain)	var _player = obj_playerMain
 //Draw Pause Menu
 
 //draw surrounding box
-draw_sprite_stretched(spr_menuBox, 0, (360/2)-((widest*9)/2), 110, widest*9, (array_length(pauseMenuOptions[subMenu])*14)+6)
-draw_sprite_stretched(spr_menuBox, 0, (360/2)-(string_length(currentMenu[subMenu])*9)/2, 97, string_length(currentMenu[subMenu])*9, 14)
+draw_sprite_stretched(spr_boxes, 0, (360/2)-((widest*9)/2), 110, widest*9, (array_length(pauseMenuOptions[subMenu])*14)+6)
+draw_sprite_stretched(spr_boxes, 0, (360/2)-(string_length(currentMenu[subMenu])*9)/2, 97, string_length(currentMenu[subMenu])*9, 14)
 
 //set text drawing settings (drawn in white, centered, and in the middle of where i tell it to draw to)
 draw_set_color(c_white)
@@ -50,3 +50,5 @@ var _distanceBetweenBars = 14
 	draw_rectangle(129, _topOutline + _distanceBetweenBars * 4, 251, _bottomOutline + _distanceBetweenBars * 4, false); draw_healthbar(130, _topHealthbar + _distanceBetweenBars * 4, 250, _bottomHealthbar + _distanceBetweenBars * 4, (global.classStats[global.class][4]/10)  * 100, c_black, c_purple, c_purple, 0, false, false); draw_text_color(190, 118 + _distanceBetweenBars *4, global.classStats[global.class][4], c_black, c_black, c_black, c_black, 1);	draw_text(117, 118 + _distanceBetweenBars * 4, "FR")
 	draw_rectangle(129, _topOutline + _distanceBetweenBars * 5, 251, _bottomOutline + _distanceBetweenBars * 5, false); draw_healthbar(130, _topHealthbar + _distanceBetweenBars * 5, 250, _bottomHealthbar + _distanceBetweenBars * 5, (global.classStats[global.class][6]/250) * 100, c_black, c_silver, c_silver, 0, false, false); draw_text_color(190, 118 + _distanceBetweenBars *5, global.classStats[global.class][6], c_black, c_black, c_black, c_black, 1);	draw_text(117, 118 + _distanceBetweenBars * 5, "RG")
 }
+
+

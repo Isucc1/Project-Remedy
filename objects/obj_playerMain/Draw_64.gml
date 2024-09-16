@@ -1,5 +1,5 @@
 
-if global.roomType != "Serious"{
+if global.roomType != "Serious" || global.roomType != "Cutscene"{
 	for (var i = 0; i < unlockedClasses + 1; ++i) {
 	    draw_sprite_ext(array_get(sprites[i], 2), 0, 344 - (i * 16), 16, 1, 1, 0, c_white, 1)
 	}

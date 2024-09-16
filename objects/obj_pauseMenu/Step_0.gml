@@ -7,7 +7,7 @@ else if keyboard_check_pressed(global.downKey) index++
 if keyboard_check_pressed(global.interactionKey){	//checking if the interaction key is pressed
 	switch (array_get(pauseMenuOptions[subMenu], index)){ 	//making what happens depending on which option is selected when the interaction key is pressed; should be releativly self explanatory
 		case "Resume" :
-			obj_pause.pause = false;	
+			global.paused = false;	
 			instance_activate_all();	
 			instance_destroy();		
 		break;
@@ -42,6 +42,10 @@ if keyboard_check_pressed(global.interactionKey){	//checking if the interaction 
 		break;
 		case "Blake's First Map":
 			change_room(rm_blakeFirstMap, 400, 400)
+			audio_stop_sound(mus_mainMenu)
+		break;
+		case "Dialogue Test":
+			change_room(rm_dialogueTest, 400, 400)
 			audio_stop_sound(mus_mainMenu)
 		break;
 		case "Edit Stats/Values" :	

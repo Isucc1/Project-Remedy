@@ -1,5 +1,5 @@
-draw_sprite_stretched(spr_menuBox, 0, (room_width/2)-((widest*9)/2), 110, widest*9, (array_length(titleScreenOptions[subMenu])*14)+6)
-draw_sprite_stretched(spr_menuBox, 0, (room_width/2)-(string_length(currentMenu[subMenu])*9)/2, 97, string_length(currentMenu[subMenu])*9, 14)
+draw_sprite_stretched(spr_boxes, 0, (room_width/2)-((widest*9)/2), 110, widest*9, (array_length(titleScreenOptions[subMenu])*14)+6)
+draw_sprite_stretched(spr_boxes, 0, (room_width/2)-(string_length(currentMenu[subMenu])*9)/2, 97, string_length(currentMenu[subMenu])*9, 14)
 
 draw_set_color(c_white)
 draw_set_halign(fa_center)

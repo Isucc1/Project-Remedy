@@ -7,7 +7,7 @@ function reset_everything(){
 	global.roomType = "Cutscene"
 	
 	if instance_exists(obj_pause)
-	obj_pause.pause = false
+	global.paused = false
 
 	display_set_gui_size(360, 240)
 	draw_set_font(global.mainFont)

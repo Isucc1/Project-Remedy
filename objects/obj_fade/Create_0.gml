@@ -11,6 +11,6 @@ y = 0
 
 depth = -15999
 
-image_alpha = 0
+alpha = 0
 sprite_index = spr_dummyPixel
 image_blend = c_black

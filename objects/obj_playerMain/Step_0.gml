@@ -1,6 +1,15 @@
 //updating depth
 depth = -y
 
+
+if inCutscene = false || global.roomType != "Serious"{
+	camera_set_view_pos(view_camera[0], x-180, y-120)
+	camera_set_view_size(view_camera[0], 360, 240)
+} else if global.roomType == "Serious"{
+	camera_set_view_pos(view_camera[0], 0, 0)
+}
+
+
 //death
 if playerCurrentHealth <= 0{	dead = true	}
 if dead || global.roomType = "Cutscene" || transitioning{	canMove = false	} else canMove = true
@@ -82,7 +91,7 @@ if !(position_meeting(x, ((y + 10) + vspd), obj_collisionParent)){
 
 if hspd != 0 || vspd != 0 image_speed = 1; else image_speed = 0
 
-if global.roomType = "Puzzle" && keyboard_check_pressed(vk_space){
+if global.roomType = "Puzzle" && keyboard_check_pressed(global.interactionKey){
 	switch(directionFacing){
 	case 0: instance_create_depth(x,	y-10,	0, obj_interactionBox)	break;
 	case 1: instance_create_depth(x-10, y,		0, obj_interactionBox)	break;

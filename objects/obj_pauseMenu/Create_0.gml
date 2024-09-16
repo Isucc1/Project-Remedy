@@ -5,7 +5,7 @@ menuText = "this is broken"
 pauseMenuOptions[0] = ["Resume", "Settings", "Debug Options", "Title"]
 pauseMenuOptions[1] = ["No functionality yet; Come back later", "Back to Main Menu"]
 pauseMenuOptions[2] = ["Change Room", "Edit Stats/Values", "Toggle Debug", "Back to Main Menu"]
-pauseMenuOptions[3] = ["First Test Room", "Totally Original Maze", "Puzzle Test", "The Serious Room", "Blake's First Map", "Back to Main Menu"]
+pauseMenuOptions[3] = ["First Test Room", "Totally Original Maze", "Puzzle Test", "The Serious Room", "Blake's First Map", "Dialogue Test", "Back to Main Menu"]
 pauseMenuOptions[4] = ["", "", "", "", "", "", "Back to Main Menu"]
 
 currentMenu[0] = "Main"
