@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"environment sprites",
-    "path":"folders/Sprites/placeholder sprites/environment sprites.yy",
+    "name":"objects",
+    "path":"folders/Sprites/placeholder sprites/environment sprites/objects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

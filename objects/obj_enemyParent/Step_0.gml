@@ -10,3 +10,12 @@ if (timer > 0) {
         canFire = true
     }
 }
+
+if position_meeting(x, y, obj_collisionParent){
+	
+	var distanceToMiddleX = sign((room_width/2) - x)
+	var distanceToMiddleY = sign((room_height/2) - y)
+	
+	x += distanceToMiddleX
+	y += distanceToMiddleY
+}

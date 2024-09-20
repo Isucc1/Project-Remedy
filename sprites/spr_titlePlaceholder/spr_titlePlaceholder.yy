@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":1,
   "parent":{
-    "name":"placeholder sprites",
-    "path":"folders/Sprites/placeholder sprites.yy",
+    "name":"objects",
+    "path":"folders/Sprites/placeholder sprites/environment sprites/objects.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

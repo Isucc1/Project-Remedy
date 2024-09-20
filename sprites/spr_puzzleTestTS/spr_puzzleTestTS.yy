@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"environment sprites",
-    "path":"folders/Sprites/placeholder sprites/environment sprites.yy",
+    "name":"tilesets",
+    "path":"folders/Sprites/placeholder sprites/environment sprites/tilesets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

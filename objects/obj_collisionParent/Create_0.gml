@@ -1,2 +1,2 @@
-image_alpha = 100
+image_alpha = 0
 depth = -9999

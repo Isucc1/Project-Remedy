@@ -105,8 +105,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"placeholder sprites",
-    "path":"folders/Sprites/placeholder sprites.yy",
+    "name":"effect sprites",
+    "path":"folders/Sprites/placeholder sprites/effect sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

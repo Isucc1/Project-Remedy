@@ -6,3 +6,5 @@ for (var i = 0; i < array_length(a); i++;)
 
 importantObjects[0] = obj_pause
 importantObjects[1] = obj_playerMain
+
+_fullscreen = true;

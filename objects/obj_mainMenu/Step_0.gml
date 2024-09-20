@@ -30,6 +30,10 @@ if keyboard_check_pressed(global.interactionKey){
 		change_room(rm_dialogueTest, 400, 400)
 		audio_stop_sound(mus_mainMenu)
 	break;
+	case "Forest Test":
+		change_room(rm_forest, 400, 400)
+		audio_stop_sound(mus_mainMenu)
+	break;
 	case "Settings" :	subMenu = 2;	index = 0;			break;
 	case "Credits" :	subMenu = 3;	index = 0;			break;
 	case "Quit" :		game_end(0001);						break;
