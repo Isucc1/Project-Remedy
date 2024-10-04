@@ -19,9 +19,7 @@ if canMove && global.roomType = "Combat"{
 			break;
 	
 			default :
-				attack.speed = 6
-				attack.sprite_index = spr_attackPlaceholder
-				attack.attackType = "bullet"
+				instance_destroy(attack) 
 			break;		
 		}
 	}

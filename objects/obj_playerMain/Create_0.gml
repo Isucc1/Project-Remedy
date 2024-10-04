@@ -3,6 +3,8 @@ if !instance_exists(obj_fallbackCamera){
 }
 
 
+attackBasicTimer = -1
+
 abilityOneCooldownTimer = -1
 abilityTwoCooldownTimer = -1
 
@@ -26,7 +28,7 @@ vspd = 0
 directionFacing = 2
 
 invincible = false
-canFire = true
+canAttackBasic = true
 canFireFirstAbility = true
 canFireSecondAbility = true
 canMove = true
@@ -34,6 +36,10 @@ dead = false
 dodging = false
 inCutscene = false
 transitioning = false //gay rights and shit
+
+in = 15
+hold = 30
+out = 15
 
 targetDelta = 1/60;
 

@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gun",
-    "path":"sprites/spr_gun/spr_gun.yy",
+    "name":"spr_spinningWeapon",
+    "path":"sprites/spr_spinningWeapon/spr_spinningWeapon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

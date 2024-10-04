@@ -13,5 +13,7 @@ function fade(fadeOutTime, holdFadeTime, fadeInTime, color = c_black){
 	_fade.fadeInTime = fadeInTime;
 	_fade.color = color;
 	
+	_fade.image_alpha = 0.5;
+	
 	return _fade;
 }

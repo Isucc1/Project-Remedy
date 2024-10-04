@@ -1,6 +1,4 @@
-if !layer_exists("hitboxes"){
-		layer_create(0, "hitboxes")
-	}
+/*
 if canMove && global.roomType = "Combat"{
 	var attack = instance_create_layer(x, y, "hitboxes", obj_attackParent)
 	attack.source = "Good Team"

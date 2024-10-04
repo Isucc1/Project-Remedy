@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_attackPlaceholder",
-    "path":"sprites/spr_attackPlaceholder/spr_attackPlaceholder.yy",
+    "name":"spr_basicAttackPlaceholder",
+    "path":"sprites/spr_basicAttackPlaceholder/spr_basicAttackPlaceholder.yy",
   },
   "spriteMaskId":null,
   "visible":true,

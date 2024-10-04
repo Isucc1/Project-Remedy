@@ -10,7 +10,7 @@ if canMove && global.roomType = "Combat"{
 	attack.direction = point_direction(x, y, mouse_x, mouse_y)
 	//abilityOneCooldownTimer = global.playerFiringSpeed*40
 	attack.speed = 6
-	attack.sprite_index = spr_attackPlaceholder
+	attack.sprite_index = spr_basicAttackPlaceholder
 	attack.attackType = "bullet"
 }
 //NEED TO PUT IN COOLDOWN

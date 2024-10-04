@@ -1,3 +1,5 @@
+
+
 //updating depth
 depth = -y
 
@@ -27,6 +29,13 @@ if (cooldownTimer > 0) {
         canDodge = true
     }
 }
+if (attackBasicTimer > 0) {
+    attackBasicTimer -= 1;
+    if (attackBasicTimer <= 0) {
+        canAttackBasic = true
+    }
+}
+
 
 //keys
 var _upKey =	keyboard_check(global.upKey)
@@ -111,10 +120,15 @@ if position_meeting(x, y, obj_roomTransition){
 		var _room = closeTransition.TargetRoom;
 		var _x = closeTransition.TargetX;
 		var _y = closeTransition.TargetY;
+		
+		canMove = false;
+		
 	if  !transitioning{
-		fade(15, 30, 15)
 	
-		roomTimer = 60;
+		
+		fade(in, hold, out)
+	
+		roomTimer = (in + hold + out);
 	
 		transitioning = true
 	}
@@ -125,7 +139,7 @@ if position_meeting(x, y, obj_roomTransition){
 		}
 			if roomTimer > 0{
 				roomTimer -= (delta_time/16000)
-				if roomTimer < 45 && roomTimer > 40{
+				if roomTimer < (out + hold) && roomTimer > (out){
 					change_room(_room, _x, _y)
 				} if roomTimer <= 0{
 					transitioning = false
@@ -136,5 +150,19 @@ if position_meeting(x, y, obj_roomTransition){
 	show_debug_message(transitioning)
 	
 } else if !position_meeting(x, y, obj_roomTransition)	transitioning = false
+
+if mouse_check_button_pressed(mb_left) && canAttackBasic{
+	
+	if !layer_exists("hitboxes"){
+		layer_create(0, "hitboxes")
+	}
+	
+	var _attackAnimation = instance_create_layer(x, y, "hitboxes", obj_HitboxAnimation)
+	_attackAnimation.sprite_index = spr_slashEffect
+	_attackAnimation.image_angle = point_direction(_attackAnimation.x, _attackAnimation.y, mouse_x, mouse_y) - 90
+	canAttackBasic = false
+	attackBasicTimer = 12
+	
+}
 
 if keyboard_check_pressed(vk_f7) show_debug_message(transitioning)

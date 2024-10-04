@@ -1,1 +1,0 @@
-draw_sprite_ext(spr_dummyPixel, 0, 0, 0, 360, 240, 0, c_black, alpha)

@@ -1,8 +1,8 @@
-draw_set_alpha(1)
+/*draw_set_alpha(1)
 draw_set_color(c_white)
 
 draw_sprite(spr_pauseButton, 0, 352, 8)
-
+*/
 if global.paused = true{
 	draw_sprite_ext(spr_dummyPixel, 0, camX, camY, 360, 240, 0 , c_black, 0.5)
 	
