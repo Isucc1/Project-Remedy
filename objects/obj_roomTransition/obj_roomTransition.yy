@@ -29,6 +29,7 @@
       ],"listItems":[],"multiselect":false,"name":"TargetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rm_seriousRoom","path":"rooms/rm_seriousRoom/rm_seriousRoom.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_seriousRoom","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"TargetX","filters":[],"listItems":[],"multiselect":false,"name":"TargetX","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"180","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"TargetY","filters":[],"listItems":[],"multiselect":false,"name":"TargetY","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"162","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"ExitDir","filters":[],"listItems":[],"multiselect":false,"name":"ExitDir","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"south","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

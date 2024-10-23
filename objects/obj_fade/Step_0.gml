@@ -1,9 +1,3 @@
-x = camera_get_view_x(view_camera[0])
-y =	camera_get_view_y(view_camera[0])
-
-image_xscale = room_width
-image_yscale = room_height
-
 if timer > 0{
 	timer -= (delta_time/16000)
 	if timer <= 0{

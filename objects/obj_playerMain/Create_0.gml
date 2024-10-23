@@ -1,5 +1,6 @@
-if !instance_exists(obj_fallbackCamera){
-	instance_create_depth(0, 0, 0, obj_fallbackCamera)
+if !instance_exists(obj_cameraController){
+	_cam = instance_create_depth(0, 0, 0, obj_cameraController)
+	_cam.follow = id
 }
 
 

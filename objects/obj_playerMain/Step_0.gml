@@ -4,17 +4,22 @@
 depth = -y
 
 
-if inCutscene = false || global.roomType != "Serious"{
+/*if inCutscene = false || global.roomType != "Serious"{
 	camera_set_view_pos(view_camera[0], x-180, y-120)
 	camera_set_view_size(view_camera[0], 360, 240)
 } else if global.roomType == "Serious"{
 	camera_set_view_pos(view_camera[0], 0, 0)
-}
+}*/
 
 
 //death
 if playerCurrentHealth <= 0{	dead = true	}
-if dead || global.roomType = "Cutscene" || transitioning{	canMove = false	} else canMove = true
+if dead || global.roomType = "Cutscene" || transitioning || roomTimer{	
+	canMove = false	
+	show_debug_message("can't move")
+} else {
+	canMove = true
+}
 
 //delta timers
 if (dodgeTimer > 0) {
@@ -128,7 +133,7 @@ if position_meeting(x, y, obj_roomTransition){
 		
 		fade(in, hold, out)
 	
-		roomTimer = (in + hold + out);
+		roomTimer = (in + hold + out + 15);
 	
 		transitioning = true
 	}
@@ -139,16 +144,37 @@ if position_meeting(x, y, obj_roomTransition){
 		}
 			if roomTimer > 0{
 				roomTimer -= (delta_time/16000)
-				if roomTimer < (out + hold) && roomTimer > (out){
+				if is_in_range(roomTimer, (in + 1), (hold + in + 1)){
 					change_room(_room, _x, _y)
+					
+					switch(closeTransition.ExitDir){
+						
+						case "south":
+							directionFacing = 2
+							vFacing = false
+						break;
+						
+						case "north":
+							directionFacing = 0;
+							vFacing = true;
+						break;
+						
+						case "east":
+							directionFacing = 1;
+							hFacing = true;
+						break;
+						
+						case "west":
+							directionFacing = 3;
+							hFacing = false;
+						break;
+					}
 				} if roomTimer <= 0{
 					transitioning = false
 				}
 		}
 	}
-
 	show_debug_message(transitioning)
-	
 } else if !position_meeting(x, y, obj_roomTransition)	transitioning = false
 
 if mouse_check_button_pressed(mb_left) && canAttackBasic{
@@ -165,4 +191,12 @@ if mouse_check_button_pressed(mb_left) && canAttackBasic{
 	
 }
 
-if keyboard_check_pressed(vk_f7) show_debug_message(transitioning)
+if roomTimer > 0{
+	roomTimer -= (delta_time/16600)
+	canMove = false
+	} if roomTimer <= 0{
+		transitioning = false
+		roomTimer = -1
+	}
+
+show_debug_message(roomTimer)

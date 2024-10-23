@@ -7,10 +7,10 @@ event_inherited();
 watchWidth = 188
 watchHeight = 128
 
-enum state{
+enum enemy_state{
 	
 	idle,
 	chase,
 	leave
 	
-} enemyState = state.leave
+} enemyState = enemy_state.leave

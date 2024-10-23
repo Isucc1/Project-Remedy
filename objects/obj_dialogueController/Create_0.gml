@@ -43,19 +43,8 @@ textX = 16
 portraitX = 288
 
 
-msg[0] = ["hola mi amigo", "" ,faces.none, "top", "left"]
-msg[1] = ["lovely wisbas today isn't it?", "", faces.none, "top", "left"]
-msg[2] = ["i gotta test out the portrait faces and see if im coding them right", "", faces.none, "top", "left"]
-msg[3] = ["none", "", faces.none, "bottom", "left"]
-msg[4] = ["default; btw im also gonna test the positioning code to see if it looks right", "", faces.characterDefault, "bottom", "right"]
-msg[5] = ["mad", "", faces.characterMad, "top", "left"]
-msg[6] = ["pissed", "", faces.characterPissed, "top", "right"]
-msg[7] = ["happy", "", faces.characterHappy, "top", "left"]
-msg[8] = ["joyous", "", faces.characterJoyous, "top", "right"]
-msg[9] = ["sad", "", faces.characterSad, "bottom", "left"]
-msg[10] = ["depressed", "", faces.characterDepressed, "bottom", "right"]
-msg[11] = ["...", "", faces.none, "top", "left"]
-msg[12] = ["You see why I'm not the main artist now right", "", faces.none, "top", "left"]
+msg[0] = ["Error: Dialogue not set\nSolution: Fix it", "" ,faces.none, "bottom", "left"]
+
 
 
 

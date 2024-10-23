@@ -1,1 +1,1 @@
-draw_sprite_ext(spr_dummyPixel, 0, x, y, x + 360, y + 240, 0, c_black, alpha)
+draw_sprite_ext(spr_dummyPixel, 0, 0, 0, room_width, room_height + 240, 0, c_black, alpha)

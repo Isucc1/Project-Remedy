@@ -1,0 +1,42 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_transparent",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":15,
+    "SerialiseWidth":12,
+    "TileCompressedData":[
+      -113,0,7,1,0,2,0,3,0,4,-17,0,7,40,41,0,8,9,10,11,-5,0,7,48,49,0,16,17,18,19,-8,0,4,24,25,26,27,-8,0,
+      4,32,33,34,35,
+    ],
+    "TileDataFormat":1,
+  },
+  "name":"ts_transparent",
+  "out_columns":8,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_transparentBackground",
+    "path":"sprites/spr_transparentBackground/spr_transparentBackground.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":64,
+}
